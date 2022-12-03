@@ -1,0 +1,1110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8dfa310292d3f643a35b052f4486105, type: 3}
+  m_Name: HonkaiImpact3rdDB
+  m_EditorClassIdentifier: 
+  characterSheet:
+  - characterId: 100000
+    fullName: "\uD0A4\uC544\uB098\xB7\uCE74\uC2A4\uB77C\uB098"
+    name: "\uD22C\uC608\uBCF5\xB7\uBC31\uB828"
+    attributeId: 110000
+    rankId: 0
+    abilityId1: 120000
+    abilityId2: 120006
+    abilityId3: 120016
+    abilityId4: 120012
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: wc
+    slot2DImageName: portrait-wc
+  - characterId: 100001
+    fullName: "\uD0A4\uC544\uB098\xB7\uCE74\uC2A4\uB77C\uB098"
+    name: "\uBC1C\uD0A4\uB9AC\xB7\uB808\uC778\uC800"
+    attributeId: 110000
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120013
+    abilityId3: 120008
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: vr
+    slot2DImageName: portrait-vr
+  - characterId: 100002
+    fullName: "\uD0A4\uC544\uB098\xB7\uCE74\uC2A4\uB77C\uB098"
+    name: "\uCC9C\uAD81\uC758 \uB808\uC778\uC800"
+    attributeId: 110000
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120013
+    abilityId3: 120008
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: vd
+    slot2DImageName: portrait-vd
+  - characterId: 100003
+    fullName: "\uD0A4\uC544\uB098\xB7\uCE74\uC2A4\uB77C\uB098"
+    name: "\uC131\uB140\uC758 \uAE30\uB3C4"
+    attributeId: 110001
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120014
+    abilityId3: 120011
+    abilityId4: 120016
+    abilityId5: 120012
+    abilityId6: 0
+    characterFull2DImageName: dp
+    slot2DImageName: portrait-dp
+  - characterId: 100004
+    fullName: "\uD0A4\uC544\uB098\xB7\uCE74\uC2A4\uB77C\uB098"
+    name: "\uBC31\uAE30\uC0AC\xB7\uC6D4\uAD11"
+    attributeId: 110002
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120012
+    abilityId3: 120015
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: km
+    slot2DImageName: portrait-km
+  - characterId: 100005
+    fullName: "\uD0A4\uC544\uB098\xB7\uCE74\uC2A4\uB77C\uB098"
+    name: "\uACF5\uAC04\uC758 \uC728\uC790"
+    attributeId: 110002
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120012
+    abilityId3: 120015
+    abilityId4: 120017
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: hov
+    slot2DImageName: portrait-hov
+  - characterId: 100006
+    fullName: "\uD0A4\uC544\uB098\xB7\uCE74\uC2A4\uB77C\uB098"
+    name: "\uC2E0\uC5FC\uC758 \uC728\uC790"
+    attributeId: 110001
+    rankId: 2
+    abilityId1: 120001
+    abilityId2: 120012
+    abilityId3: 120014
+    abilityId4: 120013
+    abilityId5: 120017
+    abilityId6: 0
+    characterFull2DImageName: hsf
+    slot2DImageName: portrait-hsf
+  - characterId: 100100
+    fullName: "\uB77C\uC774\uB374 \uBA54\uC774"
+    name: "\uD384\uC2A4 \uC288\uD2B8\xB7\uBE44\uD64D"
+    attributeId: 110002
+    rankId: 0
+    abilityId1: 120000
+    abilityId2: 120008
+    abilityId3: 120016
+    abilityId4: 120012
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: ci
+    slot2DImageName: portrait-ci
+  - characterId: 100101
+    fullName: "\uB77C\uC774\uB374 \uBA54\uC774"
+    name: "\uBC1C\uD0A4\uB9AC\xB7\uC2A4\uD2B8\uB77C\uC774\uD06C"
+    attributeId: 110002
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120016
+    abilityId3: 120015
+    abilityId4: 120012
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: vb
+    slot2DImageName: portrait-vb
+  - characterId: 100102
+    fullName: "\uB77C\uC774\uB374 \uBA54\uC774"
+    name: "\uC0C8\uBCBD\uC758 \uC2A4\uD2B8\uB77C\uC774\uCEE4"
+    attributeId: 110002
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120016
+    abilityId3: 120015
+    abilityId4: 120005
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: stfu
+    slot2DImageName: portrait-stfu
+  - characterId: 100103
+    fullName: "\uB77C\uC774\uB374 \uBA54\uC774"
+    name: "\uADF8\uB9BC\uC790\uC758 \uCDA4"
+    attributeId: 110000
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120015
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: sd
+    slot2DImageName: portrait-sd
+  - characterId: 100104
+    fullName: "\uB77C\uC774\uB374 \uBA54\uC774"
+    name: "\uB2E8\uC8C4\uC758 \uADF8\uB9BC\uC790"
+    attributeId: 110000
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120009
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: ds
+    slot2DImageName: portrait-ds
+  - characterId: 100105
+    fullName: "\uB77C\uC774\uB374 \uBA54\uC774"
+    name: "\uB1CC\uC804 \uC5EC\uC655\uC758 \uADC0\uC2E0 \uAC11\uC8FC"
+    attributeId: 110001
+    rankId: 2
+    abilityId1: 120003
+    abilityId2: 120005
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: le
+    slot2DImageName: portrait-le
+  - characterId: 100106
+    fullName: "\uB77C\uC774\uB374 \uBA54\uC774"
+    name: "\uBC88\uAC1C\uC758 \uC728\uC790"
+    attributeId: 110001
+    rankId: 2
+    abilityId1: 120003
+    abilityId2: 120005
+    abilityId3: 120015
+    abilityId4: 120016
+    abilityId5: 120012
+    abilityId6: 0
+    characterFull2DImageName: hot
+    slot2DImageName: portrait-hot
+  - characterId: 100200
+    fullName: "\uBE0C\uB85C\uB0D0\xB7\uC790\uC774\uCE59"
+    name: "\uBC1C\uD0A4\uB9AC\xB7\uCC44\uB9AC\uC5C7"
+    attributeId: 110001
+    rankId: 0
+    abilityId1: 120000
+    abilityId2: 120013
+    abilityId3: 120007
+    abilityId4: 120012
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: vc
+    slot2DImageName: portrait-vc
+  - characterId: 100201
+    fullName: "\uBE0C\uB85C\uB0D0\xB7\uC790\uC774\uCE59"
+    name: "\uAE30\uB3D9\uC7A5\uAC11\xB7\uD669\uB9E4\uD654"
+    attributeId: 110001
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120011
+    abilityId3: 120016
+    abilityId4: 120012
+    abilityId5: 120014
+    abilityId6: 0
+    characterFull2DImageName: ya
+    slot2DImageName: portrait-ya
+  - characterId: 100202
+    fullName: "\uBE0C\uB85C\uB0D0\xB7\uC790\uC774\uCE59"
+    name: "\uD61C\uC131 \uAD6C\uB3D9"
+    attributeId: 110001
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120013
+    abilityId3: 120010
+    abilityId4: 120016
+    abilityId5: 120012
+    abilityId6: 0
+    characterFull2DImageName: dk
+    slot2DImageName: portrait-dk
+  - characterId: 100203
+    fullName: "\uBE0C\uB85C\uB0D0\xB7\uC790\uC774\uCE59"
+    name: "\uC740\uB791\uC758 \uC5EC\uBA85"
+    attributeId: 110001
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120006
+    abilityId3: 120010
+    abilityId4: 120012
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: wd
+    slot2DImageName: portrait-wd
+  - characterId: 100204
+    fullName: "\uBE0C\uB85C\uB0D0\xB7\uC790\uC774\uCE59"
+    name: "\uC124\uC6D0 \uC800\uACA9\uC218"
+    attributeId: 110002
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120004
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: ss
+    slot2DImageName: portrait-ss
+  - characterId: 100205
+    fullName: "\uBE0C\uB85C\uB0D0\xB7\uC790\uC774\uCE59"
+    name: "\uC774\uB3C4 \uD751\uD575 \uCE68\uC2DD"
+    attributeId: 110002
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120006
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: bn
+    slot2DImageName: portrait-bn
+  - characterId: 100206
+    fullName: "\uBE0C\uB85C\uB0D0\xB7\uC790\uC774\uCE59"
+    name: "\uD575\uC11C \uBC84\uB2C8"
+    attributeId: 110001
+    rankId: 1
+    abilityId1: 120002
+    abilityId2: 120012
+    abilityId3: 120015
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: hb
+    slot2DImageName: portrait-hb
+  - characterId: 100207
+    fullName: "\uBE0C\uB85C\uB0D0\xB7\uC790\uC774\uCE59"
+    name: "\uCC28\uC6D0 \uACBD\uACC4 \uB3CC\uD30C"
+    attributeId: 110000
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120016
+    abilityId3: 120005
+    abilityId4: 120008
+    abilityId5: 120012
+    abilityId6: 0
+    characterFull2DImageName: db
+    slot2DImageName: portrait-db
+  - characterId: 100208
+    fullName: "\uBE0C\uB85C\uB0D0\xB7\uC790\uC774\uCE59"
+    name: "\uC774\uCE58\uC758 \uC728\uC790"
+    attributeId: 110000
+    rankId: 2
+    abilityId1: 120002
+    abilityId2: 120004
+    abilityId3: 120016
+    abilityId4: 120012
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: hor
+    slot2DImageName: portrait-hor
+  - characterId: 100209
+    fullName: "\uBE0C\uB85C\uB0D0\xB7\uC790\uC774\uCE59"
+    name: "\uCC28\uC0DD\uC758 \uC740\uC775"
+    attributeId: 110002
+    rankId: 2
+    abilityId1: 120002
+    abilityId2: 120015
+    abilityId3: 120012
+    abilityId4: 120013
+    abilityId5: 120017
+    abilityId6: 0
+    characterFull2DImageName: sw
+    slot2DImageName: portrait-sw
+  - characterId: 100300
+    fullName: "\uBB34\uB77C\uD0C0 \uD788\uBA54\uCF54"
+    name: "\uC804\uC7A5\uC758 \uC9C8\uD48D"
+    attributeId: 110002
+    rankId: 0
+    abilityId1: 120000
+    abilityId2: 120009
+    abilityId3: 120006
+    abilityId4: 120012
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: bs
+    slot2DImageName: portrait-bs
+  - characterId: 100301
+    fullName: "\uBB34\uB77C\uD0C0 \uD788\uBA54\uCF54"
+    name: "\uADF9\uC9C0\uC804\uC778"
+    attributeId: 110001
+    rankId: 1
+    abilityId1: 120002
+    abilityId2: 120004
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: kriegs
+    slot2DImageName: portrait-kriegs
+  - characterId: 100301
+    fullName: "\uBB34\uB77C\uD0C0 \uD788\uBA54\uCF54"
+    name: "\uBC1C\uD0A4\uB9AC\xB7\uAC1C\uC120"
+    attributeId: 110002
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120009
+    abilityId3: 120012
+    abilityId4: 120006
+    abilityId5: 120014
+    abilityId6: 0
+    characterFull2DImageName: vt
+    slot2DImageName: portrait-vt
+  - characterId: 100301
+    fullName: "\uBB34\uB77C\uD0C0 \uD788\uBA54\uCF54"
+    name: "\uD4E8\uC804 \uC544\uBA38\xB7\uC2A4\uCE7C\uB81B"
+    attributeId: 110000
+    rankId: 1
+    abilityId1: 120003
+    abilityId2: 120009
+    abilityId3: 120016
+    abilityId4: 120005
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: sf
+    slot2DImageName: portrait-sf
+  - characterId: 100301
+    fullName: "\uBB34\uB77C\uD0C0 \uD788\uBA54\uCF54"
+    name: "\uC9C4\uD64D\uC758 \uAE30\uC0AC\xB7\uC6D4\uC2DD"
+    attributeId: 110000
+    rankId: 2
+    abilityId1: 120001
+    abilityId2: 120007
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: vke
+    slot2DImageName: portrait-vke
+  - characterId: 100301
+    fullName: "\uBB34\uB77C\uD0C0 \uD788\uBA54\uCF54"
+    name: "\uD54F\uBE5B \uC7A5\uBBF8"
+    attributeId: 110001
+    rankId: 2
+    abilityId1: 120001
+    abilityId2: 120007
+    abilityId3: 120009
+    abilityId4: 120016
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: br
+    slot2DImageName: portrait-br
+  - characterId: 100400
+    fullName: "\uD14C\uB808\uC0AC\xB7\uC544\uD3EC\uCE7C\uB9BD\uC2A4"
+    name: "\uBC1C\uD0A4\uB9AC\xB7\uC11C\uC57D"
+    attributeId: 110001
+    rankId: 1
+    abilityId1: 120003
+    abilityId2: 120005
+    abilityId3: 120012
+    abilityId4: 120015
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: vp
+    slot2DImageName: portrait-vp
+  - characterId: 100401
+    fullName: "\uD14C\uB808\uC0AC\xB7\uC544\uD3EC\uCE7C\uB9BD\uC2A4"
+    name: "\uC6D4\uD558\uCD08\uC639"
+    attributeId: 110002
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120009
+    abilityId3: 120008
+    abilityId4: 120012
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: lk
+    slot2DImageName: portrait-lk
+  - characterId: 100402
+    fullName: "\uD14C\uB808\uC0AC\xB7\uC544\uD3EC\uCE7C\uB9BD\uC2A4"
+    name: "\uC575\uD654\uC724\uBB34"
+    attributeId: 110001
+    rankId: 1
+    abilityId1: 120001
+    abilityId2: 120007
+    abilityId3: 120016
+    abilityId4: 120015
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: sr
+    slot2DImageName: portrait-sr
+  - characterId: 100403
+    fullName: "\uD14C\uB808\uC0AC\xB7\uC544\uD3EC\uCE7C\uB9BD\uC2A4"
+    name: "\uC0AD\uC57C\uAD00\uC131"
+    attributeId: 110002
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120012
+    abilityId3: 120006
+    abilityId4: 120013
+    abilityId5: 120014
+    abilityId6: 0
+    characterFull2DImageName: sa
+    slot2DImageName: portrait-sa
+  - characterId: 100404
+    fullName: "\uD14C\uB808\uC0AC\xB7\uC544\uD3EC\uCE7C\uB9BD\uC2A4"
+    name: "\uCC98\uD615\uBCF5\xB7\uBC18\uD63C\uCD08"
+    attributeId: 110000
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120008
+    abilityId3: 120009
+    abilityId4: 120016
+    abilityId5: 120015
+    abilityId6: 0
+    characterFull2DImageName: ve
+    slot2DImageName: portrait-ve
+  - characterId: 100405
+    fullName: "\uD14C\uB808\uC0AC\xB7\uC544\uD3EC\uCE7C\uB9BD\uC2A4"
+    name: "\uD669\uD63C \uAE30\uC0AC\xB7\uC6D4\uD669"
+    attributeId: 110000
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120008
+    abilityId3: 120015
+    abilityId4: 120012
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: tp
+    slot2DImageName: portrait-tp
+  - characterId: 100406
+    fullName: "\uD14C\uB808\uC0AC\xB7\uC544\uD3EC\uCE7C\uB9BD\uC2A4"
+    name: "\uC2E0\uC740\uC1A1\uAC00"
+    attributeId: 110002
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120013
+    abilityId3: 120011
+    abilityId4: 120015
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: ch
+    slot2DImageName: portrait-ch
+  - characterId: 100500
+    fullName: "\uD6C4 \uCE74"
+    name: "\uBC1C\uD0A4\uB9AC\xB7\uD574\uCCAD"
+    attributeId: 110001
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120006
+    abilityId3: 120014
+    abilityId4: 120012
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: va
+    slot2DImageName: portrait-va
+  - characterId: 100501
+    fullName: "\uD6C4 \uCE74"
+    name: "\uC548\uAC1C\uC131\uC758 \uD574\uCCAD"
+    attributeId: 110001
+    rankId: 1
+    abilityId1: 120003
+    abilityId2: 120009
+    abilityId3: 120005
+    abilityId4: 120012
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: hf
+    slot2DImageName: portrait-hf
+  - characterId: 100502
+    fullName: "\uD6C4 \uCE74"
+    name: "\uBC31\uC57C\uC9D1\uC0AC"
+    attributeId: 110002
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120008
+    abilityId3: 120016
+    abilityId4: 120015
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: ns
+    slot2DImageName: portrait-ns
+  - characterId: 100503
+    fullName: "\uD6C4 \uCE74"
+    name: "\uC601\uAE30\uC0AC\xB7\uC6D4\uB95C"
+    attributeId: 110000
+    rankId: 2
+    abilityId1: 120003
+    abilityId2: 120008
+    abilityId3: 120016
+    abilityId4: 120015
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: sk
+    slot2DImageName: portrait-sk
+  - characterId: 100504
+    fullName: "\uD6C4 \uCE74"
+    name: "\uC758\uC2DD\uC758 \uC728\uC790"
+    attributeId: 110002
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120011
+    abilityId3: 120012
+    abilityId4: 120013
+    abilityId5: 120016
+    abilityId6: 0
+    characterFull2DImageName: hos
+    slot2DImageName: portrait-hos
+  - characterId: 100505
+    fullName: "\uD6C4 \uCE74"
+    name: "\uCE58\uB839"
+    attributeId: 110001
+    rankId: 2
+    abilityId1: 120001
+    abilityId2: 120010
+    abilityId3: 120012
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: px
+    slot2DImageName: portrait-px
+  - characterId: 100506
+    fullName: "\uD6C4 \uCE74"
+    name: "\uB2E8\uC2EC\uC758 \uBA39\uAD6C\uB984"
+    attributeId: 110001
+    rankId: 2
+    abilityId1: 120001
+    abilityId2: 120007
+    abilityId3: 120012
+    abilityId4: 120013
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: ae
+    slot2DImageName: portrait-ae
+  - characterId: 100600
+    fullName: "\uB9AC\uD0C0\xB7\uB85C\uC2A4\uBC14\uC774\uC138"
+    name: "\uAC80\uC740 \uC7A5\uBBF8"
+    attributeId: 110001
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120012
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: ur
+    slot2DImageName: portrait-ur
+  - characterId: 100601
+    fullName: "\uB9AC\uD0C0\xB7\uB85C\uC2A4\uBC14\uC774\uC138"
+    name: "\uD5CC\uD2B8 \uC288\uD2B8\xB7\uD32C\uD140 \uC544\uC774\uC5B8"
+    attributeId: 110000
+    rankId: 1
+    abilityId1: 120003
+    abilityId2: 120005
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: pi
+    slot2DImageName: portrait-pi
+  - characterId: 100602
+    fullName: "\uB9AC\uD0C0\xB7\uB85C\uC2A4\uBC14\uC774\uC138"
+    name: "\uCC3D\uAE30\uC0AC\xB7\uC6D4\uD63C"
+    attributeId: 110002
+    rankId: 2
+    abilityId1: 120002
+    abilityId2: 120004
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: aka
+    slot2DImageName: portrait-aka
+  - characterId: 100603
+    fullName: "\uB9AC\uD0C0\xB7\uB85C\uC2A4\uBC14\uC774\uC138"
+    name: "\uB85C\uC2A4\uD2B8 \uB85C\uC988\uB9C8\uB9AC"
+    attributeId: 110003
+    rankId: 2
+    abilityId1: 120003
+    abilityId2: 120005
+    abilityId3: 120012
+    abilityId4: 120013
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: fr
+    slot2DImageName: portrait-fr
+  - characterId: 100604
+    fullName: "\uB9AC\uD0C0\xB7\uB85C\uC2A4\uBC14\uC774\uC138"
+    name: "\uC131\uADF9\uC694\uB780"
+    attributeId: 110000
+    rankId: 2
+    abilityId1: 120001
+    abilityId2: 120007
+    abilityId3: 120012
+    abilityId4: 120013
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: spa
+    slot2DImageName: portrait-spa
+  - characterId: 100700
+    fullName: "\uC57C\uC5D0 \uC0AC\uCFE0\uB77C"
+    name: "\uBC24 \uADF8\uB9BC\uC790 \uCE74\uC2A4\uBBF8"
+    attributeId: 110002
+    rankId: 1
+    abilityId1: 120003
+    abilityId2: 120005
+    abilityId3: 120012
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: kasumi
+    slot2DImageName: portrait-kasumi
+  - characterId: 100701
+    fullName: "\uC57C\uC5D0 \uC0AC\uCFE0\uB77C"
+    name: "\uC5ED\uC2E0 \uBB34\uB140"
+    attributeId: 110002
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120008
+    abilityId3: 120016
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: miko
+    slot2DImageName: portrait-miko
+  - characterId: 100702
+    fullName: "\uC57C\uC5D0 \uC0AC\uCFE0\uB77C"
+    name: "\uC9C4\uC5FC\uD589\uD63C"
+    attributeId: 110002
+    rankId: 1
+    abilityId1: 120001
+    abilityId2: 120007
+    abilityId3: 120012
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: fs
+    slot2DImageName: portrait-fs
+  - characterId: 100703
+    fullName: "\uC57C\uC5D0 \uC0AC\uCFE0\uB77C"
+    name: "\uD604\uC2E0\uD654\xB7\uBB3C\uB9DD\uCD08"
+    attributeId: 110000
+    rankId: 2
+    abilityId1: 120002
+    abilityId2: 120004
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: meme
+    slot2DImageName: portrait-meme
+  - characterId: 100800
+    fullName: "\uCE74\uB80C\xB7\uCE74\uC2A4\uB77C\uB098"
+    name: "\uC131\uACB0 \uC608\uC7A5\xB7\uAE08\uC591"
+    attributeId: 110000
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120011
+    abilityId3: 120015
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: ri
+    slot2DImageName: portrait-ri
+  - characterId: 100801
+    fullName: "\uCE74\uB80C\xB7\uCE74\uC2A4\uB77C\uB098"
+    name: "\uC6D0\uC8C4 \uC0AC\uB0E5\uAFBC"
+    attributeId: 110000
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120006
+    abilityId3: 120012
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: sj
+    slot2DImageName: portrait-sj
+  - characterId: 100802
+    fullName: "\uCE74\uB80C\xB7\uCE74\uC2A4\uB77C\uB098"
+    name: "\uC81C6 \uC57C\uC0C1\uACE1"
+    attributeId: 110001
+    rankId: 2
+    abilityId1: 120002
+    abilityId2: 120004
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: 6s
+    slot2DImageName: portrait-6s
+  - characterId: 100900
+    fullName: "\uB85C\uC798\uB9AC\uC544\xB7\uC544\uB9B0"
+    name: "\uBE14\uB8E8\uBCA0\uB9AC \uD2B9\uACF5"
+    attributeId: 110000
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120004
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: bb
+    slot2DImageName: portrait-bb
+  - characterId: 100901
+    fullName: "\uB85C\uC798\uB9AC\uC544\xB7\uC544\uB9B0"
+    name: "\uCCB4\uB9AC \uD3ED\uD0C4"
+    attributeId: 110001
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120013
+    abilityId3: 120012
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: mc
+    slot2DImageName: portrait-mc
+  - characterId: 100902
+    fullName: "\uB85C\uC798\uB9AC\uC544\xB7\uC544\uB9B0"
+    name: "\uC5F4\uAD11 \uD15C\uD3EC\u0394"
+    attributeId: 110001
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120013
+    abilityId3: 120012
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: ft
+    slot2DImageName: portrait-ft
+  - characterId: 101000
+    fullName: "\uC81C\uB808\xB7\uBC1C\uB808\uB9AC"
+    name: "\uD658\uD574\uC758 \uAFC8\uB098\uBE44"
+    attributeId: 110003
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120016
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: sp
+    slot2DImageName: portrait-sp
+  - characterId: 101001
+    fullName: "\uC81C\uB808\xB7\uBC1C\uB808\uB9AC"
+    name: "\uD53C\uC548\uC30D\uC0DD"
+    attributeId: 110003
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120009
+    abilityId3: 120012
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: sn
+    slot2DImageName: portrait-sn
+  - characterId: 101002
+    fullName: "\uC81C\uB808\xB7\uBC1C\uB808\uB9AC"
+    name: "\uC5FC\uC57C\uC131\uC5F0"
+    attributeId: 110003
+    rankId: 2
+    abilityId1: 120002
+    abilityId2: 120004
+    abilityId3: 120012
+    abilityId4: 120016
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: nyx
+    slot2DImageName: portrait-nyx
+  - characterId: 101100
+    fullName: "\uB4C0\uB780\uB2EC"
+    name: "\uBC1C\uD0A4\uB9AC\xB7\uC601\uAD11"
+    attributeId: 110003
+    rankId: 1
+    abilityId1: 120001
+    abilityId2: 120007
+    abilityId3: 120012
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: vg
+    slot2DImageName: portrait-vg
+  - characterId: 101101
+    fullName: "\uB4C0\uB780\uB2EC"
+    name: "\uC131\uD718\uC758 \uAE30\uC0AC\xB7\uC6D4\uBC31"
+    attributeId: 110000
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120009
+    abilityId3: 120012
+    abilityId4: 120016
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: bke
+    slot2DImageName: portrait-bke
+  - characterId: 101102
+    fullName: "\uB4C0\uB780\uB2EC"
+    name: "\uB370\uC544 \uC575\uCEE4"
+    attributeId: 110002
+    rankId: 2
+    abilityId1: 120001
+    abilityId2: 120007
+    abilityId3: 120012
+    abilityId4: 120013
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: da
+    slot2DImageName: portrait-da
+  - characterId: 101103
+    fullName: "\uB4C0\uB780\uB2EC"
+    name: "\uCC9C\uC6D0\uAE30\uC0AC"
+    attributeId: 110004
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120012
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: pe
+    slot2DImageName: portrait-pe
+  - characterId: 101200
+    fullName: "\uD53C\uC2AC"
+    name: "\uB2E8\uC8C4\uC758 \uD669\uB140!!"
+    attributeId: 110002
+    rankId: 1
+    abilityId1: 120003
+    abilityId2: 120015
+    abilityId3: 120012
+    abilityId4: 120017
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: pv
+    slot2DImageName: portrait-pv
+  - characterId: 101300
+    fullName: "\uC5D8\uB9AC\uC2DC\uC544"
+    name: "\uD551\uD06C \uC5D8\uD504\uC591\u266A"
+    attributeId: 110001
+    rankId: 2
+    abilityId1: 120000
+    abilityId2: 120015
+    abilityId3: 120012
+    abilityId4: 120017
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: mpe
+    slot2DImageName: portrait-mpe
+  - characterId: 101301
+    fullName: "\uC5D8\uB9AC\uC2DC\uC544"
+    name: "\uC9C4\uC544\xB7\uC778\uAC04\uC758 \uC728\uC790"
+    attributeId: 110001
+    rankId: 2
+    abilityId1: 120002
+    abilityId2: 120004
+    abilityId3: 120012
+    abilityId4: 120016
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: hoh
+    slot2DImageName: portrait-hoh
+  - characterId: 101400
+    fullName: "\uBAFC\uBE44\uC6B0\uC2A4"
+    name: "\uBB34\uD55C\xB7\uC6B0\uB85C\uBCF4\uB85C\uC2A4"
+    attributeId: 110000
+    rankId: 2
+    abilityId1: 120003
+    abilityId2: 120012
+    abilityId3: 120017
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: io
+    slot2DImageName: portrait-io
+  - characterId: 101500
+    fullName: "\uB098\uD0C0\uC0E4\xB7\uC2DC\uC62C\uB77C"
+    name: "\uD55C\uBC24\uC758 \uC555\uC0DD\uD2B8"
+    attributeId: 110004
+    rankId: 1
+    abilityId1: 120001
+    abilityId2: 120012
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: ma
+    slot2DImageName: portrait-ma
+  - characterId: 101600
+    fullName: "\uCE90\uB864\xB7\uD398\uD37C"
+    name: "\uB9E4\uCF64\uB2EC\uCF64 \uC18C\uB140"
+    attributeId: 110000
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120012
+    abilityId3: 120017
+    abilityId4: 120013
+    abilityId5: 120006
+    abilityId6: 120009
+    characterFull2DImageName: sns
+    slot2DImageName: portrait-sns
+  - characterId: 101700
+    fullName: "\uD30C\uB974\uB3C4 \uD544\uB9AC\uC2A4"
+    name: "\uD658\uBABD\xB7\uAFC8\uAFB8\uB294 \uACE0\uC591\uC774"
+    attributeId: 110004
+    rankId: 1
+    abilityId1: 120002
+    abilityId2: 120004
+    abilityId3: 120012
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: rc
+    slot2DImageName: portrait-rc
+  - characterId: 101800
+    fullName: "\uC544\uD3EC\uB2C8\uC544"
+    name: "\uACC4\uC728\xB7\uC8C4\uC758 \uC2EC\uC5F0"
+    attributeId: 110002
+    rankId: 2
+    abilityId1: 120003
+    abilityId2: 120012
+    abilityId3: 120017
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: aponia
+    slot2DImageName: portrait-aponia
+  - characterId: 101900
+    fullName: "\uC5D0\uB374"
+    name: "\uD669\uAE08\xB7\uCC2C\uB780\uD55C \uB178\uB798"
+    attributeId: 110004
+    rankId: 1
+    abilityId1: 120003
+    abilityId2: 120012
+    abilityId3: 120005
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: eden
+    slot2DImageName: portrait-eden
+  - characterId: 102000
+    fullName: "\uADF8\uB9AC\uC138\uC624"
+    name: "\uBC88\uC131\xB7\uC138\uC0C1\uC744 \uADF8\uB9AC\uB294 \uBCC4"
+    attributeId: 110001
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120008
+    abilityId3: 120012
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: griseo
+    slot2DImageName: portrait-griseo
+  - characterId: 102100
+    fullName: "\uBE4C\uBE0C\uC774"
+    name: "\uB098\uC120\xB7\uD658\uC0C1\uC758 \uC0C1\uC790"
+    attributeId: 110003
+    rankId: 2
+    abilityId1: 120001
+    abilityId2: 120015
+    abilityId3: 120016
+    abilityId4: 120017
+    abilityId5: 120012
+    abilityId6: 0
+    characterFull2DImageName: vill-v
+    slot2DImageName: portrait-vill-v
+  - characterId: 102200
+    fullName: "\uC774 \uC18C\uC0C1"
+    name: "\uC625\uAE30\uC0AC\xB7\uC6D4\uD754"
+    attributeId: 110001
+    rankId: 2
+    abilityId1: 120002
+    abilityId2: 120015
+    abilityId3: 120013
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: jk
+    slot2DImageName: portrait-jk
+  attributeSheet:
+  - attributeId: 110000
+    name: "\uAE30\uACC4"
+    imageName: mecha
+  - attributeId: 110001
+    name: "\uC774\uB2A5"
+    imageName: psychic
+  - attributeId: 110002
+    name: "\uC0DD\uBB3C"
+    imageName: biologic
+  - attributeId: 110003
+    name: "\uC591\uC790"
+    imageName: quantum
+  - attributeId: 110004
+    name: "\uD5C8\uC218"
+    imageName: imaginary
+  abilitySheet:
+  - abilityId: 0
+    name: null
+    imageName: null
+  - abilityId: 120000
+    name: "\uBB3C\uB9AC"
+    imageName: physical
+  - abilityId: 120001
+    name: "\uD654\uC5FC \uB300\uBBF8\uC9C0"
+    imageName: fire-dmg
+  - abilityId: 120002
+    name: "\uBE59\uACB0 \uB300\uBBF8\uC9C0"
+    imageName: ice-dmg
+  - abilityId: 120003
+    name: "\uB1CC\uC804 \uB300\uBBF8\uC9C0"
+    imageName: lightning-dmg
+  - abilityId: 120004
+    name: "\uBE59\uACB0"
+    imageName: freeze-dmg
+  - abilityId: 120005
+    name: "\uB9C8\uBE44"
+    imageName: paralyze
+  - abilityId: 120006
+    name: "\uAE30\uC808"
+    imageName: stun
+  - abilityId: 120007
+    name: "\uC810\uD654"
+    imageName: ignite
+  - abilityId: 120008
+    name: "\uCD9C\uD608"
+    imageName: bleed
+  - abilityId: 120009
+    name: "\uAC15\uD0C0"
+    imageName: heavy-atk
+  - abilityId: 120010
+    name: "\uD5C8\uC57D"
+    imageName: weaken
+  - abilityId: 120011
+    name: "\uCDE8\uC57D"
+    imageName: impair
+  - abilityId: 120012
+    name: "\uC2DC\uACF5"
+    imageName: time-mastery
+  - abilityId: 120013
+    name: "\uD761\uC778"
+    imageName: gather
+  - abilityId: 120014
+    name: "\uCE58\uB8CC"
+    imageName: heal
+  - abilityId: 120015
+    name: "\uB192\uC740 \uBE48\uB3C4"
+    imageName: fast-atk
+  - abilityId: 120016
+    name: "\uD3ED\uBC1C, \uBC84\uC2A4\uD2B8"
+    imageName: burst
+  - abilityId: 120017
+    name: "\uB300\uACF5"
+    imageName: aerial
+  rankSheet:
+  - rankId: 0
+    imageName: B_Rank
+  - rankId: 1
+    imageName: A_Rank
+  - rankId: 2
+    imageName: S_Rank
