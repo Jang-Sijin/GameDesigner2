@@ -1,6 +1,6 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
+using JSJ_Library;
 
 public class UI_CharacterCategory : MonoBehaviour
 {
@@ -23,7 +23,8 @@ public class UI_CharacterCategory : MonoBehaviour
         _characterContentSlot.Init();
 
         // DB character Sheet 마지막 행의 Full 2D 이미지를 _characterFullImage에 불러온다.
-        string charFullImageName = DBManager.Instance.DB.characterSheet[DBManager.Instance.DB.characterSheet.Count - 1].characterFull2DImageName;
-        _characterFullImage.sprite = Resources.Load<Sprite>(Define.CharacterFull2DFolderPath + charFullImageName) as Sprite;
+        
+        string charFullImageName = Managers.DataManager.ExcelData.characterSheet[Managers.DataManager.ExcelData.characterSheet.Count - 1].characterFull2DImageName;
+        _characterFullImage.sprite = Resources.Load<Sprite>(DefinePath.CharacterFull2DFolderPath + charFullImageName) as Sprite;
     }
 }

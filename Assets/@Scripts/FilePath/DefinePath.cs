@@ -1,10 +1,15 @@
-public static class Define
+public static class DefinePath
 {
     // 프리팹 폴더
     public const string PrefabPath = "Prefabs/";
     public const string CharacterSlotPrefab = PrefabPath + "Slot_Button";
     
+    // DATA 폴더 위치
+    public const string DataFolderPath = "Data/";
     
+    // Excel HonkaiImpact3rdDB 파일 위치
+    public const string ExcelHonkaiDB = DataFolderPath + "HonkaiImpact3rdDB";
+
     // Excel HonkaiImpact3rdDB characterSheet관련 폴더 이름 리스트
     public const string CharacterFull2DFolderPath = "HonkaiImpact3rd_Texture/CharacterFull2D/";
     public const string Slot2DFolderPath = "HonkaiImpact3rd_Texture/CharacterSlot2D/";

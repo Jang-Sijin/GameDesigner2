@@ -1,9 +1,7 @@
-using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UI;
+using JSJ_Library;
 
 public class UI_CharacterContentSlot : MonoBehaviour
 {
@@ -13,13 +11,13 @@ public class UI_CharacterContentSlot : MonoBehaviour
     public void Init()
     {
         // characterSheet 총개수를 _slotCount에 저장한다.
-        _slotCount = DBManager.Instance.DB.characterSheet.Count;
+        _slotCount = Managers.DataManager.ExcelData.characterSheet.Count;
 
         // characterSheet 총개수만큼 캐릭터 슬롯 프리팹을 가져온다. 
         for (int i = 0; i < _slotCount; ++i)
         {
             // 캐릭터 슬롯 프리팹 불러오기.
-            GameObject loadSlotPrefab = Resources.Load(Define.CharacterSlotPrefab) as GameObject;
+            GameObject loadSlotPrefab = Resources.Load(DefinePath.CharacterSlotPrefab) as GameObject;
             GameObject characterSlot = PrefabUtility.InstantiatePrefab(loadSlotPrefab) as GameObject;
             
             // 1.각각의 캐릭터 슬롯 프리팹을 해당 스크립트가 있는 오브젝트 하위로 이동
