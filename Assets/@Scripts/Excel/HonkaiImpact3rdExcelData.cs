@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExcelAsset]
-public class HonkaiImpact3rdDB : ScriptableObject
+public class HonkaiImpact3rdExcelData : ScriptableObject
 {
 	public List<CharacterEntity> characterSheet;
 	public List<CharacterAttributeEntity> attributeSheet;

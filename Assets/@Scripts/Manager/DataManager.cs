@@ -3,11 +3,19 @@ using UnityEngine;
 
 public class DataManager
 {
-     public HonkaiImpact3rdDB ExcelData;
+     public HonkaiImpact3rdExcelData ExcelData;
 
      public void Init()
      {
           if (ExcelData == null)
-               ExcelData = Resources.Load<HonkaiImpact3rdDB>(DefinePath.ExcelHonkaiDB);
+               ExcelData = Resources.Load<HonkaiImpact3rdExcelData>(DefinePath.ExcelHonkaiDB);
+     }
+
+     public bool IsLoaded()
+     {
+          if (ExcelData == null)
+               return false;
+
+          return true;
      }
 }

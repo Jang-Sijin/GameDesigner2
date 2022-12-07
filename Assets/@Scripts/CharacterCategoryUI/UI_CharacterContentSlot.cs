@@ -3,13 +3,16 @@ using UnityEditor;
 using UnityEngine;
 using JSJ_Library;
 
-public class UI_CharacterContentSlot : MonoBehaviour
+public class UI_CharacterContentSlot : UI_Base
 {
     private int _slotCount;
-    private List<UI_CharacterSlot> _characterSlots = new List<UI_CharacterSlot>();
+    private List<UI_CharacterSlot_Button> _characterSlots = new List<UI_CharacterSlot_Button>();
 
-    public void Init()
+    public override bool Init()
     {
+        if (base.Init() == false)
+            return false;
+        
         // characterSheet 총개수를 _slotCount에 저장한다.
         _slotCount = Managers.DataManager.ExcelData.characterSheet.Count;
 
@@ -26,9 +29,11 @@ public class UI_CharacterContentSlot : MonoBehaviour
             if (characterSlot != null)
             {
                 characterSlot.transform.SetParent(this.transform);
-                _characterSlots.Add(characterSlot.GetComponent<UI_CharacterSlot>());
-                _characterSlots[i].Init(i);
+                _characterSlots.Add(characterSlot.GetComponent<UI_CharacterSlot_Button>());
+                _characterSlots[i].Initialization(i);
             }
         }
+
+        return true;
     }
 }

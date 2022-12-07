@@ -1,5 +1,7 @@
 using UnityEngine;
 
+/*
+// [샘플]
 namespace JSJ_Library
 {
     public class Managers : MonoBehaviour
@@ -10,11 +12,12 @@ namespace JSJ_Library
             get { return s_instance; }
         }
 
-        private DataManager _dataManager = new DataManager();
-        public static DataManager DataManager
-        {
-            get { return Instance?._dataManager; }
-        }
+        // @여러 매니저 멤버변수 선언
+        //private SomethingManager _somethingManager = new SomethingManager();
+        //public static SomethingManager SomethingManager
+        //{
+        //    get { return Instance?._somethingManager; }
+        //}
 
         public static void Init()
         {
@@ -32,8 +35,9 @@ namespace JSJ_Library
             s_instance = Utils.GetOrAddComponent<Managers>(managers);
             DontDestroyOnLoad(managers);
             
-            // Managers에 등록된 여러 개의 Manager 객체들을 초기화한다.
-            DataManager.Init();
+            // @Managers에 등록된 여러 개의 Manager 객체들을 초기화한다.
+            //SomethingManager.Init();
         }
     }
 }
+*/

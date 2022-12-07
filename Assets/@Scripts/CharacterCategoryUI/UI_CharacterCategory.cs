@@ -2,14 +2,31 @@ using UnityEngine;
 using UnityEngine.UI;
 using JSJ_Library;
 
-public class UI_CharacterCategory : MonoBehaviour
+public class UI_CharacterCategory : UI_Scene
 {
+    enum Buttons
+    {
+        UI_CharacterSlot_Button
+    }
+
     [SerializeField] private Image _characterFullImage;
     [SerializeField] private UI_CharacterContentSlot _characterContentSlot;
 
     private void OnValidate()
     {
         _characterContentSlot = GetComponentInChildren<UI_CharacterContentSlot>();
+    }
+
+    public override bool Init()
+    {
+        if (base.Init() == false)
+            return false;
+        
+        BindButton(typeof(Buttons));
+        
+        GetButton((int)Buttons.UI_CharacterSlot_Button).gameObject.BindEvent(OnClickCharacterSlotButton);
+
+        return true;
     }
 
     private void Start()
@@ -27,4 +44,13 @@ public class UI_CharacterCategory : MonoBehaviour
         string charFullImageName = Managers.DataManager.ExcelData.characterSheet[Managers.DataManager.ExcelData.characterSheet.Count - 1].characterFull2DImageName;
         _characterFullImage.sprite = Resources.Load<Sprite>(DefinePath.CharacterFull2DFolderPath + charFullImageName) as Sprite;
     }
+    
+        
+    #region EventHandler
+
+    void OnClickCharacterSlotButton()
+    {
+        
+    }
+    #endregion
 }
