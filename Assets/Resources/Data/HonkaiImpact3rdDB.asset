@@ -102,8 +102,8 @@ MonoBehaviour:
     abilityId4: 120013
     abilityId5: 120017
     abilityId6: 0
-    characterFull2DImageName: hsf
-    slot2DImageName: portrait-hsf
+    characterFull2DImageName: hfs
+    slot2DImageName: portrait-hfs
   - characterId: 100100
     fullName: "\uB77C\uC774\uB374 \uBA54\uC774"
     name: "\uD384\uC2A4 \uC288\uD2B8\xB7\uBE44\uD64D"
