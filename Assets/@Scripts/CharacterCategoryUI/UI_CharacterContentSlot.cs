@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 using JSJ_Library;
 using Unity.VisualScripting;
@@ -23,8 +22,8 @@ public class UI_CharacterContentSlot : UI_Base
         {
             // 캐릭터 슬롯 프리팹 불러오기.
             GameObject loadSlotPrefab = Resources.Load(DefinePath.CharacterSlotPrefab) as GameObject;
-            GameObject characterSlot = PrefabUtility.InstantiatePrefab(loadSlotPrefab) as GameObject;
-            
+            GameObject characterSlot = Instantiate(loadSlotPrefab) as GameObject;
+
             // 1.각각의 캐릭터 슬롯 프리팹을 해당 스크립트가 있는 오브젝트 하위로 이동
             // 2._characterSlots 리스트에 추가
             // 3.초기화 진행
