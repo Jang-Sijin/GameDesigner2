@@ -1,7 +1,9 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using JSJ_Library;
+using Unity.VisualScripting;
 
 public class UI_CharacterContentSlot : UI_Base
 {
@@ -14,7 +16,7 @@ public class UI_CharacterContentSlot : UI_Base
             return false;
         
         // characterSheet 총개수를 _slotCount에 저장한다.
-        _slotCount = Managers.DataManager.ExcelData.characterSheet.Count;
+        _slotCount = Managers.DataManager.ExcelData.characterSheet.Length;
 
         // characterSheet 총개수만큼 캐릭터 슬롯 프리팹을 가져온다. 
         for (int i = 0; i < _slotCount; ++i)
@@ -35,5 +37,113 @@ public class UI_CharacterContentSlot : UI_Base
         }
 
         return true;
+    }
+
+    public void OnClickSlotDefaultAscendButton()
+    {
+        GameObject[] childrens = new GameObject[this.transform.childCount];
+
+        for (int i = 0; i < this.transform.childCount; i++)
+        {
+            childrens[i] = this.transform.GetChild(i).gameObject;
+        }
+        
+        // 정렬
+        childrens = childrens.OrderBy(slot => slot.GetComponent<UI_CharacterSlot_Button>().ID).ToArray();
+
+        for (int i = 0; i < childrens.Length; i++)
+        {
+            childrens[i].transform.SetSiblingIndex(i);
+        }
+    }
+    
+    public void OnClickSlotDefaultDescendButton()
+    {
+        GameObject[] childrens = new GameObject[this.transform.childCount];
+
+        for (int i = 0; i < this.transform.childCount; i++)
+        {
+            childrens[i] = this.transform.GetChild(i).gameObject;
+        }
+        
+        // 정렬
+        childrens = childrens.OrderByDescending(slot => slot.GetComponent<UI_CharacterSlot_Button>().ID).ToArray();
+
+        for (int i = 0; i < childrens.Length; i++)
+        {
+            childrens[i].transform.SetSiblingIndex(i);
+        }
+    }
+
+    public void OnClickSlotNameAscendSortButton()
+    {
+        GameObject[] childrens = new GameObject[this.transform.childCount];
+
+        for (int i = 0; i < this.transform.childCount; i++)
+        {
+            childrens[i] = this.transform.GetChild(i).gameObject;
+        }
+        
+        // 정렬
+        childrens = childrens.OrderBy(slot => slot.GetComponent<UI_CharacterSlot_Button>().FullName).ToArray();
+
+        for (int i = 0; i < childrens.Length; i++)
+        {
+            childrens[i].transform.SetSiblingIndex(i);
+        }
+    }
+
+    public void OnClickSlotNameDescendSortButton()
+    {
+        GameObject[] childrens = new GameObject[this.transform.childCount];
+
+        for (int i = 0; i < this.transform.childCount; i++)
+        {
+            childrens[i] = this.transform.GetChild(i).gameObject;
+        }
+        
+        // 정렬
+        childrens = childrens.OrderByDescending(slot => slot.GetComponent<UI_CharacterSlot_Button>().FullName).ToArray();
+
+        for (int i = 0; i < childrens.Length; i++)
+        {
+            childrens[i].transform.SetSiblingIndex(i);
+        }
+    }
+    
+    public void OnClickSlotRankAscendSortButton()
+    {
+        GameObject[] childrens = new GameObject[this.transform.childCount];
+
+        for (int i = 0; i < this.transform.childCount; i++)
+        {
+            childrens[i] = this.transform.GetChild(i).gameObject;
+        }
+        
+        // 정렬
+        childrens = childrens.OrderBy(slot => (int)slot.GetComponent<UI_CharacterSlot_Button>().RankID).ToArray();
+
+        for (int i = 0; i < childrens.Length; i++)
+        {
+            childrens[i].transform.SetSiblingIndex(i);
+        }
+    }
+
+    public void OnClickSlotRankDescendSortButton()
+    {
+        GameObject[] childrens = new GameObject[this.transform.childCount];
+
+        for (int i = 0; i < this.transform.childCount; i++)
+        {
+            childrens[i] = this.transform.GetChild(i).gameObject;
+        }
+        
+        // 정렬
+        childrens = childrens.OrderByDescending(slot => (int)slot.GetComponent<UI_CharacterSlot_Button>().RankID).ToArray();
+
+        for (int i = 0; i < childrens.Length; i++)
+        {
+            childrens[i].transform.SetSiblingIndex(i);
+        }
     }
 }

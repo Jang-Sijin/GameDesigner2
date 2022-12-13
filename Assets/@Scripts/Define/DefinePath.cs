@@ -19,4 +19,7 @@ public static class DefinePath
 
     // Excel HonkaiImpact3rdDB rankSheet관련 폴더 이름 리스트
     public const string RankFolderPath = "HonkaiImpact3rd_Texture/CharacterRank/";
+    
+    // Excel HonkaiImpact3rdDB ability관련 폴더 이름 리스트
+    public const string AbilityFolderPath = "HonkaiImpact3rd_Texture/Ability/";
 }

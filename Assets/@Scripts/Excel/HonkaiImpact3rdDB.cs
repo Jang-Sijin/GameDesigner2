@@ -4,8 +4,8 @@ using UnityEngine;
 [ExcelAsset]
 public class HonkaiImpact3rdDB : ScriptableObject
 {
-    public List<CharacterEntity> characterSheet;
-    public List<CharacterAttributeEntity> attributeSheet;
-    public List<CharacterAbilityEntity> abilitySheet;
-    public List<CharacterRankEntity> rankSheet;
+    public CharacterEntity[] characterSheet;
+    public CharacterAttributeEntity[] attributeSheet;
+    public CharacterAbilityEntity[] abilitySheet;
+    public CharacterRankEntity[] rankSheet;
 }

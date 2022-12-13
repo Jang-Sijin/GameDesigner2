@@ -24,7 +24,7 @@ public class UI_CharacterCategory : UI_Scene
         
         BindButton(typeof(Buttons));
         
-        GetButton((int)Buttons.UI_CharacterSlot_Button).gameObject.BindEvent(OnClickCharacterSlotButton);
+        //GetButton((int)Buttons.UI_CharacterSlot_Button).gameObject.BindEvent(OnClickCharacterSlotButton);
 
         return true;
     }
@@ -41,7 +41,7 @@ public class UI_CharacterCategory : UI_Scene
 
         // DB character Sheet 마지막 행의 Full 2D 이미지를 _characterFullImage에 불러온다.
         
-        string charFullImageName = Managers.DataManager.ExcelData.characterSheet[Managers.DataManager.ExcelData.characterSheet.Count - 1].characterFull2DImageName;
+        string charFullImageName = Managers.DataManager.ExcelData.characterSheet[Managers.DataManager.ExcelData.characterSheet.Length - 1].characterFull2DImageName;
         _characterFullImage.sprite = Resources.Load<Sprite>(DefinePath.CharacterFull2DFolderPath + charFullImageName) as Sprite;
     }
     

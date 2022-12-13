@@ -7,7 +7,7 @@ public class CharacterRankEntity
 
 public enum RankCategory
 {
-    B,
-    A,
-    S,
+    B = 0,
+    A = 1,
+    S = 2,
 }
