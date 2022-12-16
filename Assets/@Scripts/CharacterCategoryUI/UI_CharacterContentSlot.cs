@@ -15,7 +15,7 @@ public class UI_CharacterContentSlot : UI_Base
             return false;
         
         // characterSheet 총개수를 _slotCount에 저장한다.
-        _slotCount = Managers.DataManager.ExcelData.characterSheet.Length;
+        _slotCount = Managers.DataManager.ExcelData.characterSheet.Count;
 
         // characterSheet 총개수만큼 캐릭터 슬롯 프리팹을 가져온다. 
         for (int i = 0; i < _slotCount; ++i)

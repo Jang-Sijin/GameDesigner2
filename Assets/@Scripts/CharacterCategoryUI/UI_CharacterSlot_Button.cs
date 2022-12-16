@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using JSJ_Library;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,6 +31,7 @@ public class UI_CharacterSlot_Button : UI_Base
     public int ID;
     public string FullName;
     public RankCategory RankID;
+    private const int abilitySize = 6;
     
     [SerializeField] private CharacterImageSlot _characterImageSlot;
     [SerializeField] private CharacterRankSlot _characterRankSlot;
@@ -36,18 +39,13 @@ public class UI_CharacterSlot_Button : UI_Base
     [SerializeField] private Image _fullCharacterImage;
     [SerializeField] private Image _attributeImage;
     [SerializeField] private Image _rankImage;
-    [SerializeField] private Image _abilitys1;
-    [SerializeField] private Image _abilitys2;
-    [SerializeField] private Image _abilitys3;
-    [SerializeField] private Image _abilitys4;
-    [SerializeField] private Image _abilitys5;
-    [SerializeField] private Image _abilitys6;
+    [SerializeField] private Image[] _abilitys = new Image[abilitySize];
     [SerializeField] private TextMeshProUGUI _fullNameText;
     [SerializeField] private TextMeshProUGUI _attributeText;
     [SerializeField] private TextMeshProUGUI _nameText;
     [SerializeField] private TextMeshProUGUI _levelText;
-    
-    void Start()
+
+    private void OnValidate()
     {
         _characterImageSlot = GetComponentInChildren<CharacterImageSlot>(true);
         _characterRankSlot = GetComponentInChildren<CharacterRankSlot>(true);
@@ -59,13 +57,11 @@ public class UI_CharacterSlot_Button : UI_Base
         _attributeText = GameObject.Find("Attribute_Text").GetComponent<TextMeshProUGUI>();
         _nameText = GameObject.Find("Name_Text").GetComponent<TextMeshProUGUI>();
         _levelText = GameObject.Find("Level_Text").GetComponent<TextMeshProUGUI>();
-        
-        _abilitys1 = GameObject.Find("Ability_Image1").GetComponent<Image>();
-        _abilitys2 = GameObject.Find("Ability_Image2").GetComponent<Image>();
-        _abilitys3 = GameObject.Find("Ability_Image3").GetComponent<Image>();
-        _abilitys4 = GameObject.Find("Ability_Image4").GetComponent<Image>();
-        _abilitys5 = GameObject.Find("Ability_Image5").GetComponent<Image>();
-        _abilitys6 = GameObject.Find("Ability_Image6").GetComponent<Image>();
+
+        for (int i = 0; i < abilitySize; i++)
+        {
+            _abilitys[i] = GameObject.Find("Ability_Image" + $"{i+1}").GetComponent<Image>();
+        }
     }
 
     public override bool Init()
@@ -73,9 +69,9 @@ public class UI_CharacterSlot_Button : UI_Base
         if (base.Init() == false)
             return false;
 
-        BindButton(typeof(Buttons));
+        //BindButton(typeof(Buttons));
 
-        GetButton((int)Buttons.Slot_Button).gameObject.BindEvent(() => { OnClickSlotButton(); });
+        //GetButton((int) Buttons.Slot_Button).gameObject.BindEvent(() => { OnClickSlotButton(); });
         
         return true;
     }
@@ -94,7 +90,7 @@ public class UI_CharacterSlot_Button : UI_Base
         if(_characterRankSlot != null)
             _characterRankSlot.Init(slotNumber);
     }
-    
+
     #region EventHandler
     public void OnClickSlotButton()
     {
@@ -111,72 +107,15 @@ public class UI_CharacterSlot_Button : UI_Base
         _attributeText.text = Managers.DataManager.ExcelData.attributeSheet.First(entity => Managers.DataManager.ExcelData.characterSheet[ID].attributeId == entity.attributeId).name;
         _nameText.text = Managers.DataManager.ExcelData.characterSheet[ID].name;
         _levelText.text = $"LV.1";
-
-        string abilityImageName = Managers.DataManager.ExcelData.abilitySheet.First(entity => Managers.DataManager.ExcelData.characterSheet[ID].abilityId1 == entity.abilityId).imageName;
-        _abilitys1.sprite =  Resources.Load<Sprite>($"{DefinePath.AbilityFolderPath + abilityImageName}") as Sprite;
-        abilityImageName = Managers.DataManager.ExcelData.abilitySheet.First(entity => Managers.DataManager.ExcelData.characterSheet[ID].abilityId2 == entity.abilityId).imageName;
-        _abilitys2.sprite =  Resources.Load<Sprite>($"{DefinePath.AbilityFolderPath + abilityImageName}") as Sprite;
-        abilityImageName = Managers.DataManager.ExcelData.abilitySheet.First(entity => Managers.DataManager.ExcelData.characterSheet[ID].abilityId3 == entity.abilityId).imageName;
-        _abilitys3.sprite =  Resources.Load<Sprite>($"{DefinePath.AbilityFolderPath + abilityImageName}") as Sprite;
-        abilityImageName = Managers.DataManager.ExcelData.abilitySheet.First(entity => Managers.DataManager.ExcelData.characterSheet[ID].abilityId4 == entity.abilityId).imageName;
-        _abilitys4.sprite =  Resources.Load<Sprite>($"{DefinePath.AbilityFolderPath + abilityImageName}") as Sprite;
-        abilityImageName = Managers.DataManager.ExcelData.abilitySheet.First(entity => Managers.DataManager.ExcelData.characterSheet[ID].abilityId5 == entity.abilityId).imageName;
-        _abilitys5.sprite =  Resources.Load<Sprite>($"{DefinePath.AbilityFolderPath + abilityImageName}") as Sprite;
-        abilityImageName = Managers.DataManager.ExcelData.abilitySheet.First(entity => Managers.DataManager.ExcelData.characterSheet[ID].abilityId6 == entity.abilityId).imageName;
-        _abilitys6.sprite =  Resources.Load<Sprite>($"{DefinePath.AbilityFolderPath + abilityImageName}") as Sprite;
-
-        if (Managers.DataManager.ExcelData.characterSheet[ID].abilityId1 == 0)
-        {
-            _abilitys1.gameObject.SetActive(false);
-        }
-        else
-        {
-            _abilitys1.gameObject.SetActive(true);
-        }
         
-        if (Managers.DataManager.ExcelData.characterSheet[ID].abilityId2 == 0)
+        for (int i = 0; i < abilitySize; i++)
         {
-            _abilitys2.gameObject.SetActive(false);
-        }
-        else
-        {
-            _abilitys2.gameObject.SetActive(true);
-        }
-        
-        if (Managers.DataManager.ExcelData.characterSheet[ID].abilityId3 == 0)
-        {
-            _abilitys3.gameObject.SetActive(false);
-        }
-        else
-        {
-            _abilitys3.gameObject.SetActive(true);
-        }
-        
-        if (Managers.DataManager.ExcelData.characterSheet[ID].abilityId4 == 0)
-        {
-            _abilitys4.gameObject.SetActive(false);
-        }
-        else
-        {
-            _abilitys4.gameObject.SetActive(true);
-        }
-        
-        if (Managers.DataManager.ExcelData.characterSheet[ID].abilityId5 == 0)
-        {
-            _abilitys5.gameObject.SetActive(false);
-        }
-        else
-        {
-            _abilitys5.gameObject.SetActive(true);
-        }
-        
-        if (Managers.DataManager.ExcelData.characterSheet[ID].abilityId6 == 0)
-        {
-            _abilitys6.gameObject.SetActive(false);
-        }
-        else
-        {
-            _abilitys6.gameObject.SetActive(true);
+            string abilityImageName = Managers.DataManager.ExcelData.abilitySheet.First(entity => Managers.DataManager.GetCharacterSheetAbilityId(ID, i+1) == entity.abilityId).imageName;
+            // Debug.Log(abilityImageName);
+            _abilitys[i].sprite =  Resources.Load<Sprite>($"{DefinePath.AbilityFolderPath + abilityImageName}") as Sprite;
+            
+            bool isActive = Managers.DataManager.GetCharacterSheetAbilityId(ID, i+1) != 0;
+            _abilitys[i].gameObject.SetActive(isActive);
         }
     }
     #endregion

@@ -8,7 +8,7 @@ public static class DefinePath
     public const string DataFolderPath = "Data/";
     
     // Excel HonkaiImpact3rdDB 파일 위치
-    public const string ExcelHonkaiDB = DataFolderPath + "HonkaiImpact3rdDB";
+    public const string ExcelHonkaiDB = DataFolderPath + "HonkaiImpact3rdData";
 
     // Excel HonkaiImpact3rdDB characterSheet관련 폴더 이름 리스트
     public const string CharacterFull2DFolderPath = "HonkaiImpact3rd_Texture/CharacterFull2D/";

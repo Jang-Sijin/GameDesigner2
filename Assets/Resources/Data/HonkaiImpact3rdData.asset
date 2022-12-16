@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8dfa310292d3f643a35b052f4486105, type: 3}
-  m_Name: HonkaiImpact3rdDB
+  m_Script: {fileID: 11500000, guid: d58c8a89be293a041981e22678af1d87, type: 3}
+  m_Name: HonkaiImpact3rdData
   m_EditorClassIdentifier: 
   characterSheet:
   - characterId: 100000
@@ -1027,6 +1027,19 @@ MonoBehaviour:
     abilityId6: 0
     characterFull2DImageName: jk
     slot2DImageName: portrait-jk
+  - characterId: 102300
+    fullName: "\uC544\uC2A4\uCE74"
+    name: "\uB0B4\uC77C\uC744 \uD5A5\uD55C \uAE30\uB3C4"
+    attributeId: 110002
+    rankId: 1
+    abilityId1: 120000
+    abilityId2: 120012
+    abilityId3: 0
+    abilityId4: 0
+    abilityId5: 0
+    abilityId6: 0
+    characterFull2DImageName: bh
+    slot2DImageName: portrait-bh
   attributeSheet:
   - attributeId: 110000
     name: "\uAE30\uACC4"

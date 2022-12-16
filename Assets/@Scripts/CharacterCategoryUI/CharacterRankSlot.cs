@@ -15,7 +15,7 @@ public class CharacterRankSlot : MonoBehaviour
     public void Init(int slotNumber)
     {
         // DB에서 slotNumber번째 슬롯의 랭크ID를 가져온다.
-        RankCategory characterRandId = Managers.DataManager.ExcelData.characterSheet[slotNumber].rankId;
+        RankCategory characterRandId = (RankCategory)Managers.DataManager.ExcelData.characterSheet[slotNumber].rankId;
         // DB에서 characterSheet 랭크ID로 RankSheet 랭크의 이름을 가져온다.
         var rankImageName = Managers.DataManager.ExcelData.rankSheet.First(iter => iter.rankId == characterRandId).imageName;
         
