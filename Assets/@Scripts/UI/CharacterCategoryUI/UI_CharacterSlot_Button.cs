@@ -45,7 +45,7 @@ public class UI_CharacterSlot_Button : UI_Base
     [SerializeField] private TextMeshProUGUI _nameText;
     [SerializeField] private TextMeshProUGUI _levelText;
 
-    private void OnValidate()
+    private void Awake()
     {
         _characterImageSlot = GetComponentInChildren<CharacterImageSlot>(true);
         _characterRankSlot = GetComponentInChildren<CharacterRankSlot>(true);

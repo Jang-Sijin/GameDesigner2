@@ -6,6 +6,8 @@ public class BaseScene : MonoBehaviour
 {
     public SceneType SceneType = SceneType.Unknown;
     protected bool _init = false;
+    
+    private const int _framerate = 120;
 
     public void Awake()
     {
@@ -18,6 +20,9 @@ public class BaseScene : MonoBehaviour
             return false;
 
         _init = true;
+
+        SetFrameRate();
+        
         Managers.Init();
 
         return true;
@@ -26,5 +31,11 @@ public class BaseScene : MonoBehaviour
     public virtual void Clear()  
     {
 
+    }
+    
+    
+    public void SetFrameRate()
+    {
+        Application.targetFrameRate = _framerate;
     }
 }

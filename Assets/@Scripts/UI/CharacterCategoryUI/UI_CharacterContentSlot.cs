@@ -29,7 +29,7 @@ public class UI_CharacterContentSlot : UI_Base
             // 3.초기화 진행
             if (characterSlot != null)
             {
-                characterSlot.transform.SetParent(this.transform);
+                characterSlot.transform.SetParent(this.transform, false); // 스케일 오류가 발생
                 _characterSlots.Add(characterSlot.GetComponent<UI_CharacterSlot_Button>());
                 _characterSlots[i].Initialization(i);
             }
