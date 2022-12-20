@@ -1,7 +1,6 @@
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using JSJ_Library;
 using TMPro;
 
 public class UI_CharacterCategory : UI_Scene
@@ -66,6 +65,8 @@ public class UI_CharacterCategory : UI_Scene
     
     private void ShowLastSlotData()
     {
+        GameObject.Find("UI_CharacterContentSlot").GetComponent<UI_CharacterContentSlot>()._characterSlots.Last().OnClickSlotButton();
+        /*
         int lastSlotID = Managers.DataManager.ExcelData.characterSheet.Count - 1;
         
         string charFullImageName = Managers.DataManager.ExcelData.characterSheet[lastSlotID].characterFull2DImageName;
@@ -82,6 +83,11 @@ public class UI_CharacterCategory : UI_Scene
         _nameText.text = Managers.DataManager.ExcelData.characterSheet[lastSlotID].name;
         _levelText.text = $"LV.1";
         
+        Color attributeTextColor;
+        string attribTextColor = Managers.DataManager.ExcelData.attributeSheet.First(entity => Managers.DataManager.ExcelData.characterSheet[lastSlotID].attributeId == entity.attributeId).imageColor;
+        ColorUtility.TryParseHtmlString (attribTextColor, out attributeTextColor);
+        _attributeText.color = attributeTextColor;
+        
         for (int i = 0; i < abilitySize; i++)
         {
             string abilityImageName = Managers.DataManager.ExcelData.abilitySheet.First(entity => Managers.DataManager.GetCharacterSheetAbilityId(lastSlotID,i+1) == entity.abilityId).imageName;
@@ -90,6 +96,7 @@ public class UI_CharacterCategory : UI_Scene
             bool isActive = Managers.DataManager.GetCharacterSheetAbilityId(lastSlotID,i+1) != 0;
             _abilitys[i].gameObject.SetActive(isActive);
         }
+        */
     }
 
     #region EventHandler

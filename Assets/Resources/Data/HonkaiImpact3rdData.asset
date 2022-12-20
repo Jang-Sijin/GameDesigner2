@@ -1044,18 +1044,23 @@ MonoBehaviour:
   - attributeId: 110000
     name: "\uAE30\uACC4"
     imageName: mecha
+    imageColor: '#2CDFFF'
   - attributeId: 110001
     name: "\uC774\uB2A5"
     imageName: psychic
+    imageColor: '#FF44CB'
   - attributeId: 110002
     name: "\uC0DD\uBB3C"
     imageName: biologic
+    imageColor: '#FBB328'
   - attributeId: 110003
     name: "\uC591\uC790"
     imageName: quantum
+    imageColor: '#A585FF'
   - attributeId: 110004
     name: "\uD5C8\uC218"
     imageName: imaginary
+    imageColor: '#F3D58A'
   abilitySheet:
   - abilityId: 0
     name: null

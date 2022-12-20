@@ -1,13 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using JSJ_Library;
-using Unity.VisualScripting;
 
 public class UI_CharacterContentSlot : UI_Base
 {
     private int _slotCount;
-    private List<UI_CharacterSlot_Button> _characterSlots = new List<UI_CharacterSlot_Button>();
+    public List<UI_CharacterSlot_Button> _characterSlots = new List<UI_CharacterSlot_Button>();
 
     public override bool Init()
     {

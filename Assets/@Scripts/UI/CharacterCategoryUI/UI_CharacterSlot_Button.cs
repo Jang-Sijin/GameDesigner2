@@ -1,11 +1,9 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using JSJ_Library;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using ColorUtility = UnityEngine.ColorUtility;
 
 public class UI_CharacterSlot_Button : UI_Base
 {
@@ -32,6 +30,9 @@ public class UI_CharacterSlot_Button : UI_Base
     public string FullName;
     public RankCategory RankID;
     private const int abilitySize = 6;
+
+    public Image _backGroundImage;
+    private static GameObject _gameObject;
     
     [SerializeField] private CharacterImageSlot _characterImageSlot;
     [SerializeField] private CharacterRankSlot _characterRankSlot;
@@ -47,6 +48,8 @@ public class UI_CharacterSlot_Button : UI_Base
 
     private void Awake()
     {
+        _backGroundImage = GetComponent<Image>();
+        
         _characterImageSlot = GetComponentInChildren<CharacterImageSlot>(true);
         _characterRankSlot = GetComponentInChildren<CharacterRankSlot>(true);
 
@@ -108,6 +111,11 @@ public class UI_CharacterSlot_Button : UI_Base
         _nameText.text = Managers.DataManager.ExcelData.characterSheet[ID].name;
         _levelText.text = $"LV.1";
         
+        Color attributeTextColor;
+        string attribTextColor = Managers.DataManager.ExcelData.attributeSheet.First(entity => Managers.DataManager.ExcelData.characterSheet[ID].attributeId == entity.attributeId).imageColor;
+        ColorUtility.TryParseHtmlString (attribTextColor, out attributeTextColor);
+        _attributeText.color = attributeTextColor;
+        
         for (int i = 0; i < abilitySize; i++)
         {
             string abilityImageName = Managers.DataManager.ExcelData.abilitySheet.First(entity => Managers.DataManager.GetCharacterSheetAbilityId(ID, i+1) == entity.abilityId).imageName;
@@ -117,6 +125,19 @@ public class UI_CharacterSlot_Button : UI_Base
             bool isActive = Managers.DataManager.GetCharacterSheetAbilityId(ID, i+1) != 0;
             _abilitys[i].gameObject.SetActive(isActive);
         }
+
+        // 이전에 선택한 캐릭터 슬롯이 있을 경우 해당 슬롯의 이미지 색상을 "흰색"으로 초기화한다. 
+        if (_gameObject != null && _gameObject != this.gameObject)
+        {
+            _gameObject.GetComponent<UI_CharacterSlot_Button>()._backGroundImage.color = Color.white;
+        }
+        _gameObject = this.gameObject;
+        
+        // 현재 선택한 캐릭터 슬롯의 이미지 색상을 "연주황"으로 변경한다.
+        Color color;
+        ColorUtility.TryParseHtmlString ("#FFD400", out color);
+        _backGroundImage.color = color;
     }
+
     #endregion
 }
